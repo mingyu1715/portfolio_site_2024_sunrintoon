@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'ONE-Mobile-POP';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ONE-Mobile-POP, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color:  #333;
+}
+
+.instruction {
+  position: relative;
+  font-size: 26px;
+  font-family: "ONE-Mobile-POP", serif;
+  color: #ccc;
+  background: #444;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+#instruction {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page.left-side ~ #instruction {
+  opacity: 0;
+}
+
+.book {
+  width: 600px; /* 600px에서 800px로 변경 */
+  height: 800px; /* 950px에서 1200px로 변경 */
+  position: relative;
+  left : 9.5%;
+  transform-style: preserve-3d;
+}
+
+.page {
+  width: 600px;
+  height: 800px;
+  background: #222;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 1s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.page:nth-child(1) {
+  padding: 5% 4% 4% 5%;
+  transform-origin: 0% 50%;
+  transform: translatez(-1px);
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: #ccc;
+}
+
+.left-side:nth-child(1) {
+  transform: translatez(1px) rotatey(-180deg);
+}
+
+.page:nth-child(2) {
+  padding: 5% 5% 4% 4%;
+  transform-origin: 100% 50%;
+  transform: translatez(-2px) scalex(-1) translatex(100%);
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.left-side:nth-child(2) {
+  transform: translatez(2px) scalex(-1) translatex(100%) rotatey(180deg);
+}
+
+.page:nth-child(3) {
+  padding: 5% 4% 4% 5%;
+  transform-origin: 0% 50%;
+  transform: translatez(-3px);
+  background: #f5f5f5;
+}
+
+.left-side:nth-child(3) {
+  transform: translatez(3px) rotatey(-180deg);
+}
+
+.page:nth-child(4) {
+  padding: 5% 5% 4% 4%;
+  transform-origin: 100% 50%;
+  transform: translatez(-4px) scalex(-1) translatex(100%);
+  background: #f5f5f5;
+}
+
+.left-side:nth-child(4) {
+  transform: translatez(4px) scalex(-1) translatex(100%) rotatey(180deg);
+}
+
+.page:nth-child(5) {
+  padding: 5% 4% 4% 5%;
+  transform-origin: 0% 50%;
+  transform: translatez(-5px);
+  background: #f5f5f5;
+}
+
+.left-side:nth-child(5) {
+  transform: translatez(5px) rotatey(-180deg);
+}
+
+.page:nth-child(6) {
+  padding: 5% 5% 4% 4%;
+  transform-origin: 100% 50%;
+  transform: translatez(-6px) scalex(-1) translatex(100%);
+  background: #f5f5f5;
+}
+
+.left-side:nth-child(6) {
+  transform: translatez(6px) scalex(-1) translatex(100%) rotatey(180deg);
+}
+
+.page:nth-child(7) {
+  padding: 5% 4% 4% 5%;
+  transform-origin: 0% 50%;
+  transform: translatez(-7px);
+  background: #f5f5f5;
+}
+
+
+.title {
+  font-size: 50px;
+  color: #333;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-page p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.comment {
+  font-family: notosanskr ;
+  position: absolute;
+  bottom : 2.0%;
+  color : white;
+  text-align: center;
+  font-size: 12px;
+}  
