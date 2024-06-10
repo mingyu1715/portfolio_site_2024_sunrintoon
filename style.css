@@ -20,7 +20,7 @@ body {
   height: 100vh;
   margin: 0;
   background-color:  #333;
-  padding: 20px 0; /* 상하 여백 추가 */
+  padding: 20px 0;
 }
 
 
@@ -45,8 +45,8 @@ body {
 }
 
 .book {
-  width: 487.5px; /* 600px에서 800px로 변경 */
-  height: 650px; /* 950px에서 1200px로 변경 */
+  width: 487.5px;
+  height: 650px;
   position: relative;
   transform-style: preserve-3d; 
   left:50;
@@ -181,8 +181,6 @@ body {
 }  
 
 
-/* Media queries for responsiveness */
-
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -223,7 +221,7 @@ body {
   .instruction {
     all: unset;
     font-size: 20px;
-    margin-bottom: 20px; /* 아래 여백 추가 */
+    margin-bottom: 20px;
     font-size: 26px;
     font-family: "ONE-Mobile-POP", serif;
     color: #ccc;
@@ -235,3 +233,8 @@ body {
     justify-content: center;
   }
 }
+  
+/*
+MADE BY MINGYU1715(snan46209@gmail.com)
+GIT HUB : https://github.com/mingyu1715/portfolio_site_2024_sunrintoon
+*/
