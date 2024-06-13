@@ -19,10 +19,8 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color:  #1e1e1e;
-  padding: 20px 0; /* 상하 여백 추가 */
+  background-color:  #333;
 }
-
 
 .instruction {
   position: relative;
@@ -32,8 +30,6 @@ body {
   background: #444;
   border-radius: 15px;
   padding: 10px 15px;
-  text-align: center;
-  margin-right : 20px;
 }
 #instruction {
   transition: opacity 0.5s ease-in-out;
@@ -44,18 +40,16 @@ body {
 }
 
 .book {
-  width: 487.5px; /* 600px에서 800px로 변경 */
-  height: 650px; /* 950px에서 1200px로 변경 */
+  width: 600px; /* 600px에서 800px로 변경 */
+  height: 800px; /* 950px에서 1200px로 변경 */
   position: relative;
-  transform-style: preserve-3d; 
-  left:50;
-  margin-left:243.75px;
-
+  left : 9.5%;
+  transform-style: preserve-3d;
 }
 
 .page {
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 800px;
   background: #222;
   position: absolute;
   top: 0;
@@ -63,8 +57,6 @@ body {
   transition: transform 1s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  left:50;
-  margin-left:243.75px
 }
 
 .page:nth-child(1) {
@@ -164,72 +156,102 @@ body {
   margin-top: 20px;
 }
 
-.text-page p {
+.text-page p,
+.text-page ul {
   font-size: 18px;
   color: #444;
   line-height: 1.6;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.text-page ul {
+  list-style-type: square;
+  margin-top: 10px;
+  padding-left: 20px;
 }
 
 .comment {
-  font-family: notosanskr ;
+  font-family: notosanskr;
   position: absolute;
-  bottom : 2.0%;
-  color : white;
+  bottom: 2%;
+  color: white;
   text-align: center;
   font-size: 12px;
-}  
+}
 
-/* Media queries for responsiveness */
+.profile {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
 
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem;
-  }
+.contact {
+  margin-top: 20px;
+  text-align: center;
+}
 
-  .book {
-    width: 50%;
-    height: auto;
-    padding-left: 3px;
-    
-  }
+.contact p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-  .page {
-    width: 100%;
-    height: 450px;
-    font-size: 16px;
-  }
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
 
-  .title {
-    font-size: 36px;
-  }
+.contact li {
+  margin: 5px 0;
+}
 
-  .subtitle {
-    font-size: 20px;
-  }
+.contact a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 18px;
+}
 
-  .text-page p {
-    font-size: 16px;
-  }
+.contact a:hover {
+  text-decoration: underline;
+}
 
-  .comment {
-    font-size: 10px;
-    bottom: 10px;
-  }
+.portfolio-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
 
-  .instruction {
-    all: unset;
-    font-size: 20px;
-    margin-bottom: 20px; /* 아래 여백 추가 */
-    font-size: 26px;
-    font-family: "ONE-Mobile-POP", serif;
-    color: #ccc;
-    background: #444;
-    border-radius: 15px;
-    padding: 10px 15px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
+.intro_write {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project h2 {
+  font-size: 24px;
+}
+
+.project-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.project1_code {
+  font-weight: bold;
 }
